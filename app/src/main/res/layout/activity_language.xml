@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/main_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Please select language"
+           android:gravity="center_horizontal"
+           android:textSize="40sp"
+           android:layout_marginTop="50dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Press Ok to Confirm"
+            android:gravity="center_horizontal"
+            android:textSize="40sp"
+            android:layout_marginTop="100dp"/>
+
+        <FrameLayout
+            android:id="@+id/fl_cn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="50dp"
+            android:focusable="true"
+            android:layout_marginEnd="50dp">
+        <ImageView
+            android:id="@+id/iv_cn"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/u8"
+            android:scaleType="fitXY" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@drawable/u16"/>
+        </FrameLayout>
+        <TextView
+            android:id="@+id/tv_cn"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="中文"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_below="@id/fl_cn"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_centerHorizontal="true"/>
+        <FrameLayout
+            android:id="@+id/fl_burmese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/fl_cn"
+            android:focusable="true"
+            android:layout_centerVertical="true">
+            <ImageView
+                android:id="@+id/iv_burmese"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:src="@drawable/u8"
+                android:scaleType="fitXY" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@drawable/u10"/>
+        </FrameLayout>
+        <TextView
+            android:id="@+id/tv_burmese"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="Burmese"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_below="@id/fl_burmese"
+            android:layout_toStartOf="@id/tv_cn"
+            android:layout_centerHorizontal="true"/>
+
+        <FrameLayout
+            android:id="@+id/fl_en"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/fl_cn"
+            android:focusable="true"
+            android:layout_centerVertical="true">
+            <ImageView
+                android:id="@+id/iv_en"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:src="@drawable/u8"
+                android:scaleType="fitXY" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@drawable/u13"/>
+        </FrameLayout>
+        <TextView
+            android:id="@+id/tv_en"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="English"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_below="@id/fl_en"
+            android:layout_toEndOf="@id/tv_cn"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</layout>

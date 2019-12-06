@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    /缅甸语
+    <string-array name="week">
+        <item>တနင်္ဂနွေ</item>
+        <item>တနင်္လာနေ့</item>
+        <item>အင်္ဂါနေ့</item>
+        <item>ဗုဒ္ဓဟူးနေ့</item>
+        <item>ကြာသပတေးနေ့</item>
+        <item>သောကြာနေ့</item>
+        <item>စနေနေ့</item>
+    </string-array>
+
+
+</resources>
